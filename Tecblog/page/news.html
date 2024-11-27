@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecBlog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dark-mode.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>TecBlog</h1>
+        <button id="toggle-mode">Ativar Modo Escuro</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+<script> 
+const toggleButton = document.getElementById('toggle-mode');
+const body = document.body;
+
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    toggleButton.textContent = 'Ativar Modo Claro';
+}
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+
+    
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Ativar Modo Claro';
+        localStorage.setItem('dark-mode', 'enabled'); 
+    } else {
+        toggleButton.textContent = 'Ativar Modo Escuro';
+        localStorage.setItem('dark-mode', 'disabled'); 
+    }
+});
+</script>
+
+    <main>
+        <article>
+            <h2>AMD Ryzen 7 9800X3D</h2>
+            <p>Data: 06/11/2024</p>
+            <div class="image-container">
+                <img src="imagens/amd-imagen.jpg" class="card-img-top" alt="Imagem do Post">
+            </div>
+            <p>Essa é a análise (review) do processador AMD Ryzen 7 9800X3D, um CPU baseado na microarquitetura Zen 5, com 8 núcleos e 16 threads, 96MB de cache L3 através da tecnologia 3D V-cache e que alcança 5.2GHz e preço de US$ 480 em cenário internacional.
+                O 9800X3D é um processador com um foco claro: games. Ele não tem a grande quantidade de núcleos que CPUs Ryzen 9 tem para oferecer, mas em contrapartida adiciona grandes quantidades de cache nível 3 (L3 cache) para reduzir sensivelmente latências em algumas operações. Entre os principais beneficiados por muito cache estão os games.</p>
+<br> 
+<div class="image-container">
+    <img src="imagens/amd-imagen2.jpg" class="card-img-top" alt="Imagem do Post">
+</div>
+
+
+            <p>No lado da microarquitetura dos núcleos, os processadores Zen 5 (Ryzen 9000) não impressionaram muito, trazendo ganhos de desempenho quase imperceptíveis versus os modelos Zen 4 (Ryzen 7000 e 8000).
+
+                Agora é oficial! AMD lança o Ryzen 7 9800X3D com 104MB de cache por US$ 479
+                Porém o 3D V-cache tem impacto na performance em diversos jogos, e no Ryzen 7 9800X3D temos a segunda geração dessa tecnologia. Para alcançar a grande quantidade de memória, a AMD empilhou núcleos de processamento em cima da memória cache, e fez a conexão usando o VIA interconnect (conexões que atravessam os dies).
+                
+                O Ryzen 7 9800X3D introduz a segunda geração da tecnologia 3D V-Cache
+                
+                A segunda geração do 3D V-Cache muda a ordem das coisas, com os núcleos de processamento e demais estruturas do Zen 5 ficando na parte superior, empilhados em cima da memória cache.
+                
+                Isso trouxe um benefício importante: agora os núcleos de processamento, local onde há o maior aquecimento no arranjo, está mais próximo da tampa do processador, e com isso temos ele mais próximo da solução de arrefecimento. Isso melhorou o gerenciamento do aquecimento do processador.
+                
+                Isso gera um incremento de 43% na eficiência em gerenciar o calor, e também abriu margem para o incremento de 500MHz no clock base, e 200MHz no boost máximo. De acordo com a AMD, operando em um TDP de 105W, ele também fica muito mais próximo do 9700X, do que o 7800X3D ficava do 7800X. </p>
+            </div>
+            <div class="image-container">
+                <img src="imagens/amd-imagen3.jpg" class="card-img-top" alt="Imagem do Post">
+
+            </div>
+            <div class="tags">
+                
+                <strong>Fontes do artigo:</strong>
+                <a href="https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/20.html" target="_blank">banchmark</a>
+                <a href="https://www.kabum.com.br/produto/662405/processador-amd-ryzen-7-9800x3d-cache-8mb-8-nucleos-16-threads-am5-100-100001084wof" target="_blank">preço</a>
+            </div>
+        </article>
+
+        
+        
+        
+    </main>
+        
+
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 TecBlog. Todos os direitos reservados.</p>
+        <li><a href="contato.html">Contato</a></li>
+    </footer>
+</body>
+

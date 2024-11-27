@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecBlog</title>
+    <link rel="stylesheet" href="css/sb.css">
+    <script src="js/dark-mode.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>TecBlog</h1>
+        <button id="toggle-mode">Ativar Modo Escuro</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<script> 
+const toggleButton = document.getElementById('toggle-mode');
+const body = document.body;
+
+
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    toggleButton.textContent = 'Ativar Modo Claro';
+}
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+
+    
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Ativar Modo Claro';
+        localStorage.setItem('dark-mode', 'enabled'); 
+    } else {
+        toggleButton.textContent = 'Ativar Modo Escuro';
+        localStorage.setItem('dark-mode', 'disabled'); 
+    }
+});
+</script>
+
+<section id="sobre">
+    <h2>Sobre o Blog de Notícias de Tecnologia</h2>
+    <p>Bem-vindo ao TecBlog um Blog de Notícias de Tecnologia, o seu destino confiável para as últimas novidades, análises e tendências do mundo da tecnologia. Aqui, buscamos trazer informações atualizadas e relevantes sobre tudo que está acontecendo no setor, desde lançamentos de produtos até inovações que estão moldando o futuro.</p>
+
+    <h3>Nossa Missão</h3>
+    <p>Nossa missão é informar e educar nossos leitores sobre as inovações tecnológicas que impactam nossas vidas diárias. Acreditamos que a tecnologia deve ser acessível e compreensível para todos, e é por isso que nos esforçamos para apresentar as notícias de forma clara e envolvente. Queremos que você se sinta capacitado para tomar decisões informadas sobre as ferramentas e soluções que você utiliza.</p>
+
+    <h3>O Que Você Pode Esperar</h3>
+    <p>No nosso blog, você encontrará uma variedade de conteúdos, incluindo:</p>
+    <ul>
+        <li><strong>Notícias Quentes</strong>: Fique por dentro das últimas notícias do mundo da tecnologia, incluindo lançamentos de gadgets, atualizações de software e muito mais.</li>
+        <li><strong>Análises e Reviews</strong>: Nossos especialistas testam e analisam os produtos mais recentes, oferecendo opiniões sinceras para ajudá-lo a escolher o que é melhor para você.</li>
+        <li><strong>Tendências e Inovações</strong>: Explore as tendências emergentes que estão moldando o futuro da tecnologia, desde inteligência artificial até internet das coisas (IoT).</li>
+        <li><strong>Guias e Tutoriais</strong>: Aprenda a tirar o máximo proveito da tecnologia com nossos guias práticos e tutoriais passo a passo.</li>
+    </ul>
+
+    <h3>Junte-se a Nós</h3>
+    <p>Convidamos você a se juntar à nossa comunidade de entusiastas da tecnologia. Siga-nos nas redes sociais e inscreva-se em nossa newsletter para não perder nenhuma atualização. Estamos sempre abertos ao feedback e sugestões, pois acreditamos que a interação com nossos leitores é fundamental para o nosso crescimento.</p>
+
+    <p>Obrigado por visitar o nosso blog! Estamos animados para compartilhar nossa paixão pela tecnologia com você e esperamos que você aproveite nosso conteúdo tanto quanto nós gostamos de criá-lo.</p>
+
+    <!-- Imagem no final da seção -->
+    <div class="imagem-final">
+        <img src="imagens/tecblog.jpg" alt="Descrição da Imagem" class="responsive-image">
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 TecBlog. Todos os direitos reservados.</p>
+        <li><a href="contato.html">Contato</a></li>
+    </footer>
+</body>
+

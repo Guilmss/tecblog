@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+header {
+    background-color: #0d0d35;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+label {
+    margin-bottom: 5px;
+}
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    background-color: #0d0d35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0d0d35;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d0d35;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.light-mode {
+background-color: white;
+color: black;
+}
+.dark-mode {
+background-color: #121212;
+color: white;
+}
+nav ul {
+list-style-type: none; 
+padding: 0; 
+margin: 0; 
+display: flex; 
+justify-content: center; 
+}
+
+nav li {
+margin: 0 15px; 
+}
+
+nav a {
+text-decoration: none; 
+color: white; 
+}
+.mapa {
+margin-top: 20px; 
+width: 100%; 
+max-width: 500px; 
+height: 350px; 
+border: 0;
+}
+.social-media {
+margin-top: 20px; 
+text-align: center; 
+}
+
+.social-media a {
+display: block; 
+margin-bottom: 10px; 
+color: #0d0d35; 
+text-decoration: none; 
+}
+
+.social-media a:hover {
+text-decoration: underline; 
+}
+
+.map-container {
+margin-top: 20px;
+}
+
+.mapa {
+width: 100%; 
+max-width: 550px; 
+height: 350px;
+border: 0; 
+}
