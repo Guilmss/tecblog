@@ -1,0 +1,181 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+body.light-mode {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+header {
+    background-color: #0d0d35; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+body {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+body.dark-mode {
+    background-color: #080808; 
+    color: #232366; 
+}
+
+aside.dark-mode {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+}
+
+header.dark-mode {
+    background-color: #1e1e1e; 
+}
+
+nav ul li a.dark-mode {
+    color: #ffffff; 
+}
+
+aside.dark-mode {
+    background-color: #1e1e1e; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d0d35; 
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.tags {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tags a {
+    
+    color: #008cff; 
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tags a:hover {
+    background-color: #a7a7a7; 
+}
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.light-mode {
+    background-color: #0d0d35; 
+    color: white;
+}
+
+button.dark-mode {
+    background-color: #0d0d35; 
+    color: white;
+}  
+.carousel-item img {
+    height: 400px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorcer */
+}
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Ajuste a largura máxima conforme necessário */
+    margin: auto;
+}
+
+.mySlides {
+    display: none; /* Oculta as slides inicialmente */
+}
+
+img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3
+}
+.custom-card {
+            width: 550px; /* Largura do card */
+            height: 300px; /* Altura do card */
+            overflow: hidden; /* Esconde conteúdo que ultrapassa os limites do card */
+            background-color: #0d0d35;
+        }
+        .card-img-top {
+            height: 200px; /* Altura da imagem */
+            object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorcer */
+        }
+        
+        /* Estilos para o modo escuro */
+body.dark-mode .feedback {
+    background-color: #1e1e1e; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto clara */
+}
+
+body.dark-mode .feedback .card {
+    background-color: #2a2a2a; /* Cor de fundo dos cartões */
+    border: none; /* Remover bordas dos cartões */
+}
+
+body.dark-mode .feedback .blockquote {
+    color: #ffffff; /* Cor do texto do bloco de citação */
+}
+
+body.dark-mode .feedback .blockquote-footer {
+    color: #cccccc; /* Cor do texto do autor da citação */
+}
+section.feedback.py-5.bg-light {
+    background-color: #111111 !important;
+}
